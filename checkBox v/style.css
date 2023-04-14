@@ -1,0 +1,50 @@
+
+input
+{
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+    outline: none;
+    border: none;
+}
+
+.control_indicator {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+    background: rgb(40, 40, 40);
+    border: 1px solid #96969640;
+    border-radius: 3px;
+}
+
+label input
+{
+    top: 0vw;
+    left: 0vw;
+}
+
+label .control_indicator
+{
+    top: .1vw;
+    left: .1vw;
+}
+
+.control_indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked + .control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: .55vw;
+    top: .27vw;
+    width: .3vw;
+    height: .7vw;
+    border: solid #F6EFFF;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}

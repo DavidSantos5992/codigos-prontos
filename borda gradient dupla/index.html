@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="driftContainer">
+
+        <div class="driftBorder">
+
+        </div>
+
+        <div class="driftBorderBackground">
+
+        </div>
+
+
+        <div class="drift">
+
+            <h1>drift: <span>+ 505050</span></h1>
+
+        </div>
+
+    </div>
+
+    <style>
+        :root {
+            --drift-background: radial-gradient(77.73% 185.19% at 103.83% 111.06%, rgba(148, 171, 255, 0.5) 0%, rgba(0, 0, 0, 0) 62.59%), radial-gradient(42.11% 45.81% at 50% -2.41%, rgba(196, 220, 248, 0.25) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(71.76% 71.76% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33.33%, #000000 78.12%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(197, 230, 255, 0.3);
+            --drift-border-color: #9ac7ff93;
+            --menu-background: radial-gradient(71.76% 71.76% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0.9) 81.08%), rgba(0, 0, 0, 0.2);
+            --default-bold-font: arial;
+            --default-font: verdana;
+
+            --default-confirm-button-background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 94.78%), rgba(143, 175, 212, 0.3);
+            --default-confirm-border-background: #8FAFD480;
+
+            --default-cancel-button-background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 94.78%), rgba(182, 0, 55, 0.3);
+            --default-cancel-border-background: #B6003780;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(77.73% 185.19% at 103.83% 111.06%, rgba(148, 171, 255, 0.5) 0%, rgba(0, 0, 0, 0) 62.59%), radial-gradient(42.11% 45.81% at 50% -2.41%, rgba(196, 220, 248, 0.25) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(71.76% 71.76% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33.33%, #000000 78.12%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(197, 230, 255, 0.3);
+            overflow: hidden
+        }
+
+        .driftContainer {
+            width: 12.91vw;
+            height: 4.6vw;
+            position: relative;
+        }
+
+        .driftBorder {
+            width: 12.91vw;
+            height: 4.6vw;
+
+            border: 2px solid var(--drift-border-color);
+            border-radius: 5px;
+            -webkit-mask-image: linear-gradient(to left, transparent 5%, rgb(0, 0, 0) 100%);
+            mask-image: linear-gradient(to left, transparent 100%, rgba(0, 0, 0, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        .driftBorderBackground {
+            width: 12.91vw;
+            height: 4.6vw;
+
+            position: absolute;
+            bottom: .7vw;
+            right: .2vw;
+
+            -webkit-mask-image: linear-gradient(to right, transparent 25%, rgb(0, 0, 0) 100%);
+            mask-image: linear-gradient(to left, transparent 100%, rgba(0, 0, 0, 0) 100%);
+
+            background: var(--drift-background);
+            mix-blend-mode: normal;
+            border: 2px solid var(--drift-border-color);
+            border-radius: 5px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        .drift {
+            width: 12.91vw;
+            height: 4.6vw;
+            position: absolute;
+            bottom: .8vw;
+            right: .2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+
+        .drift h1 {
+            font-family: var(--default-bold-font);
+            font-weight: 800;
+            font-size: 1vw;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            letter-spacing: 0.05vw;
+            text-transform: uppercase;
+            color: #D0E6FF;
+        }
+
+        .drift h1 span {
+            font-family: var(--default-font);
+            font-weight: 100;
+        }
+    </style>
+</body>
+
+</html>

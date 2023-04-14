@@ -1,0 +1,8 @@
+border: 1px solid #fcfcfc93;
+
+-webkit-mask-image: linear-gradient(to right, transparent 15%, rgb(0, 0, 0) 100%);
+
+mask-image: linear-gradient(to left, transparent 100%, rgba(0, 0, 0, 0) 100%);
+
+
+/* se mudar o transparent para outra cor ele muda o outro lado */

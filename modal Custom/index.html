@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nui-</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <div v-if="modalActive > 0" id="modalContainer">
+
+            <div v-if="modalActive == 1" class="modal">
+
+                <img v-if="customModal.type == 'confirmation' " src="assets/interrogation.svg">
+                <img v-if="customModal.type == 'success' " src="assets/check.svg">
+                <img v-if="customModal.type == 'error' " src="assets/x.svg">
+
+                <h1>{{customModal.text }}</h1>
+
+                <div class="modalButtonsContainer">
+
+                    <div  @clicK="insertModal(0)" :style="{'width' : customModal.type == 'confirmation' ? '10.39vw' : '100%'}"
+                        class="modalButtons confirm" :class="{cancel: customModal.type == 'error',
+                                 confirm: customModal.type == 'success'}">
+
+                        <p>confirmar</p>
+
+                    </div>
+
+                    <div @clicK="insertModal(0)" v-if="customModal.type == 'confirmation' " class="modalButtons cancel">
+                        <p>cancelar</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
