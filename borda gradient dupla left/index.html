@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>borda</title>
+</head>
+
+<body>
+
+    <div class="notificationMessageContainer">
+
+        <div class="notificationMessageBorder ">
+
+        </div>
+
+        <div class="notificationMessageBorderBackground ">
+
+        </div>
+
+
+        <div class="notificationMessage">
+
+            <h1>Incêndio Em Residência <span> - 10 Feridos <img src="assets/check.svg" alt=""></span></h1>
+
+            <h2>Tempo Restante: <span>00:00:00h</span></h2>
+
+            <h2>chamadas restantantes: <span>10/10 <img src="assets/check.svg" alt=""></span></h2>
+
+        </div>
+
+    </div>
+
+</body>
+
+<style>
+    :root {
+        --default-menu-background: linear-gradient(114.76deg, rgba(4, 4, 4, 0.8) 3.28%, rgba(0, 0, 0, 0) 104.59%), rgba(0, 0, 0, 0.8);
+        --default-button-background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100.18%), rgba(169, 208, 255, 0.1);
+        --default-button-border-color: rgba(169, 208, 255, 0.3);
+        --default-button-hover: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100.18%), rgba(169, 208, 255, 0.448);
+
+
+        --default-font: 'Montserrat';
+        --default-bold-font: 'MontserratB';
+        --default-thin-font: 'MontserratX';
+        --default-font-color: #ffff;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(107, 104, 104);
+    }
+
+
+    .notificationMessage h1 {
+        height: 1vw;
+        font-family: var(--default-bold-font);
+        font-weight: 500;
+        font-size: .72vw;
+        letter-spacing: 0.05vw;
+        color: var(--default-font-color);
+        margin-bottom: .8vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .notificationMessage h2 span {
+        height: 1vw;
+        display: flex;
+        align-items: center;
+        font-family: var(--default-font);
+    }
+
+    .notificationMessage h1 span {
+        margin-left: .3vw;
+    }
+
+
+    .notificationMessage h2 span img {
+        width: 1vw;
+        margin-left: .5vw;
+    }
+
+    .notificationMessage h2 {
+        font-family: var(--default-font);
+        font-weight: 600;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        letter-spacing: 0.15vw;
+        text-transform: capitalize;
+        color: var(--default-font-color);
+        margin-bottom: .8vw;
+    }
+
+    .notificationMessage h2 span {
+        font-weight: 500;
+        font-family: var(--default-thin-font);
+    }
+
+    .notificationMessageContainer {
+        width: 20.26vw;
+        height: 10.52vw;
+        position: relative;
+        /*  background: green; */
+    }
+
+    .notificationMessageBorder {
+        width: 20.26vw;
+        height: 10.52vw;
+        border-radius: 5px;
+        border: 1px solid #8FD49A80;
+
+        -webkit-mask-image: linear-gradient(to left, transparent 25%, rgb(0, 0, 0) 100%);
+        mask-image: linear-gradient(to left, transparent 100%, rgba(0, 0, 0, 0) 100%);
+        /*   background: red; */
+    }
+
+    .notificationMessageBorderBackground {
+        width: 20.26vw;
+        height: 10.52vw;
+
+        position: absolute;
+        top: -.7vw;
+        right: -.8vw;
+
+        background: linear-gradient(106.3deg, rgba(0, 0, 0, 0.7) 22.87%, rgba(0, 0, 0, 0) 100.7%);
+        border-radius: 5px;
+
+        border: 1px solid #8FD49A80;
+
+        -webkit-mask-image: linear-gradient(to left, transparent 25%, rgb(0, 0, 0) 100%);
+        mask-image: linear-gradient(to left, transparent 100%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .notificationMessage {
+        width: 20.26vw;
+        height: 10.52vw;
+        position: absolute;
+        top: -.7vw;
+        right: -.8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 1vw;
+        /* background-color: rebeccapurple; */
+    }
+
+    .notificationMessage h1 {
+        height: 1vw;
+        /* background-color: rebeccapurple; */
+        font-family: var(--default-bold-font);
+        font-weight: 500;
+        font-size: .72vw;
+        letter-spacing: 0.05vw;
+        color: var(--default-font-color);
+        margin-bottom: .8vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .notificationMessage h1 span,
+    .notificationMessage h2 span {
+        height: 1vw;
+        display: flex;
+        align-items: center;
+        font-family: var(--default-font);
+    }
+
+    .notificationMessage h1 span {
+        margin-left: .3vw;
+    }
+
+
+    .notificationMessage h1 span img,
+    .notificationMessage h2 span img {
+        width: 1vw;
+        margin-left: .5vw;
+    }
+
+    .notificationMessage h2 {
+        font-family: var(--default-font);
+        font-weight: 600;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        letter-spacing: 0.15vw;
+        text-transform: capitalize;
+        color: var(--default-font-color);
+        margin-bottom: .8vw;
+    }
+
+    .notificationMessage h2 span {
+        font-weight: 500;
+        font-family: var(--default-thin-font);
+    }
+    
+</style>
+
+
+</html>
