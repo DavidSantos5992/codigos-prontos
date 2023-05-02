@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+        <div id="modalActiveContainer">
+
+            <div class="modalContainer">
+    
+                <h1>raça desejada</h1>
+            
+                <div @click="AnimationBreedSelect()" class="dogBreedSelectConainer">
+            
+                    <h3>{{selectedBreed}}</h3>
+            
+                    <img src="assets/arrow.svg" alt="">
+            
+                    <div id="dogBreedSelect" class="block">
+            
+                        <button @click="setDogBreed(v)" v-for="v in breeds">
+                            <p>{{ v }}</p>
+                        </button>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="modalButtonContainer">
+            
+                    <button @click="newDogBreed('confirm')">
+                        <p>confirmar</p>
+                    </button>
+            
+                    <button @click="newDogBreed('cancel')">
+                        <p>cancelar</p>
+                    </button>
+            
+                </div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+    
+   
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="index.js"></script>

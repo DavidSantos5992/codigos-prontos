@@ -1,0 +1,257 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(145, 49, 49, 0.2);
+
+}
+:root {
+    --default-font-color: #ffff;
+    --default-font: arial;
+    --default-thin-font: arial;
+}
+
+#modalActiveContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalActiveContainer .modalContainer {
+    width: 23.22vw;
+    height: 15.41vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2vw 1vw;
+}
+
+#modalActiveContainer .modalContainer h1 {
+    font-family: var(--default-thin-font);
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    line-height: 2vw;
+    text-align: center;
+
+    color: var(--default-font-color);
+    margin-bottom: 1vw;
+}
+
+#modalActiveContainer .modalContainer input,
+.dogBreedSelectConainer {
+    width: 18.28vw;
+    height: 3.43vw;
+    background: linear-gradient(180deg, rgba(7, 7, 7, 0.35) 0%, #090909 50.52%, rgba(7, 7, 7, 0.35) 100%);
+    font-family: var(--default-thin-font);
+    font-weight: 300;
+    font-size: .75vw;
+    line-height: 2vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--default-font-color);
+    /* margin-bottom: 1vw; */
+    outline: none;
+    border: none;
+
+}
+
+#modalActiveContainer .modalButtonContainer {
+    width: 100%;
+    height: 3.37vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+#modalActiveContainer .modalButtonContainer button {
+    width: 10.39vw;
+    height: 3.37vw;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100.18%), rgba(143, 175, 212, 0.25);
+    border: 1px solid rgba(143, 175, 212, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    justify-content: center;
+}
+
+.dogBreedSelectConainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+}
+
+.dogBreedSelectConainer h3 {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 1.5vw;
+    font-family: var(--default-font);
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: var(--default-font-color);
+}
+
+.dogBreedSelectConainer img {
+    width: 1vw;
+    margin-right: 1vw;
+}
+
+#dogBreedSelect {
+    width: 100%;
+    height: 19.47vw;
+    top: 3.01vw;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(7, 7, 7, 0.35) 0%, #090909 50.52%, rgba(7, 7, 7, 0.35) 100%);
+    /*  background: green; */
+}
+
+.block {
+    display: none;
+}
+
+#dogBreedSelect button {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+    background: rgba(255, 0, 0, 0);
+    outline: none;
+    border: none;
+}
+
+#dogBreedSelect button:hover,
+#dogBreedSelect button:focus {
+    opacity: 1;
+}
+
+
+#dogBreedSelect button p {
+    font-family: var(--default-thin-font);
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    text-transform: capitalize;
+    color: var(--default-font-color);
+}
+
+#modalActiveContainer .modalButtonContainer button:hover,
+#modalActiveContainer .modalButtonContainer button:focus {
+    box-shadow: 0 0 1vw rgba(143, 175, 212, 0.5);
+}
+
+#modalActiveContainer .modalButtonContainer button:nth-child(2) {
+    margin-left: .5vw;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100.18%), rgba(182, 0, 55, 0.25);
+    border: 1px solid rgba(182, 0, 55, 0.5);
+}
+
+#modalActiveContainer .modalButtonContainer button:nth-child(2):hover,
+#modalActiveContainer .modalButtonContainer button:nth-child(2):focus {
+    box-shadow: 0 0 15px rgba(182, 0, 55, 0.5);
+}
+
+#modalActiveContainer .modalButtonContainer button p {
+    font-family: var(--default-thin-font);
+    font-weight: 300;
+    font-size: .72vw;
+    text-transform: uppercase;
+    color: var(--default-font-color);
+}
+
+/* ---------------------------------- */
+.scale_up_ver_top {
+    -webkit-animation: scale_up_ver_top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale_up_ver_top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale_up_ver_top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+}
+
+@keyframes scale_up_ver_top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+    }
+}
+
+/* ---------------------------------- */
+.scale_out_ver_top {
+    -webkit-animation: scale_out_ver_top 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: scale_out_ver_top 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes scale_out_ver_top {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale_out_ver_top {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+/* ---------------------------------- */
