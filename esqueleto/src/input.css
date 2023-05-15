@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: .2;
+    user-select: none
+}
+
+/* ------------------------------------- */
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat/MontserratRegular.ttf')
+}
+
+@font-face {
+    font-family: 'MontserratB';
+    src: url('../assets/Montserrat/MontserratBold.ttf')
+}
+
+@font-face {
+    font-family: 'MontserratX';
+    src: url('../assets/Montserrat/montserrat-extralight.ttf')
+}
+
+@font-face {
+    font-family: 'Act_Of_Rejection';
+    src: url('../assets/Martyric_PersonalUse.ttf')
+}
