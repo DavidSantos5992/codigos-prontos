@@ -6,6 +6,7 @@
 }
 
 :root {
+    
     --default-confirm-button: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100.18%), rgba(143, 175, 212, 0.25);
     --default-border-confirm-button: rgba(143, 175, 212, 0.5);
 
