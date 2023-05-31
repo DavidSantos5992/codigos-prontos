@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+      background: linear-gradient(to right, #642b73, #c6426e);
+  }
+
+  .container {
+    width: 100px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: red;
+  }
+  
+  .check {
+    position: absolute;
+    left: 50%;
+    border: solid 3px #000000B2;
+    width: 10px;
+    height: 7px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+  /*   box-shadow: -5px 5px 0 0 rgba(0,0,0,.5); */
+  }
+  
+  .check {
+    animation: start 1.5s ease infinite both;
+    /* Override default play state paused of codepen iframe */
+    animation-play-state: running!important;
+  }
+  
+  @keyframes start {
+    0% {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    50% {
+      opacity: 1;
+      width: 0;
+      height: 7px;
+    }
+    100% {
+      width: 10px;
+    }
+  }
