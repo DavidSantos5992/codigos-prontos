@@ -522,29 +522,58 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
+.font-MontserratB {
+  font-family: MontserratB, MontserratB;
 }
 
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.underline {
-  text-decoration-line: underline;
+* {
+  transition: .2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none
 }
 
 h1 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+  font-family: MontserratB, MontserratB;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+/* ------------------------------------- */
+
+@font-face {
+  font-family: 'Montserrat';
+
+  src: url('../assets/Montserrat/MontserratRegular.ttf')
+}
+
+@font-face {
+  font-family: 'MontserratB';
+
+  src: url('../assets/Montserrat/MontserratBold.ttf')
+}
+
+@font-face {
+  font-family: 'MontserratX';
+
+  src: url('../assets/Montserrat/montserrat-extralight.ttf')
+}
+
+@font-face {
+  font-family: 'Act_Of_Rejection';
+
+  src: url('../assets/Martyric_PersonalUse.ttf')
 }

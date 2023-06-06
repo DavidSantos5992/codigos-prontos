@@ -7,6 +7,9 @@
     user-select: none
 }
 
+h1 {
+    @apply text-black font-MontserratB
+}
 /* ------------------------------------- */
 
 
