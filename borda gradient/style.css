@@ -8,4 +8,9 @@
     mask-image: linear-gradient(to left, transparent 100%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* se mudar o transparent para outra cor ele muda o outro lado */
+.border {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(156.36deg, rgba(255, 255, 255, 0.4) 15.09%, rgba(255, 255, 255, 0) 84.65%);
+}
+
