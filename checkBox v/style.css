@@ -1,6 +1,4 @@
-
-input
-{
+input {
     width: 1.5vw;
     height: 1.5vw;
     position: absolute;
@@ -17,14 +15,12 @@ input
     border-radius: 3px;
 }
 
-label input
-{
+label input {
     top: 0vw;
     left: 0vw;
 }
 
-label .control_indicator
-{
+label .control_indicator {
     top: .1vw;
     left: .1vw;
 }
@@ -35,7 +31,7 @@ label .control_indicator
     display: none;
 }
 
-.control input:checked + .control_indicator:after {
+.control input:checked+.control_indicator:after {
     display: block;
 }
 
