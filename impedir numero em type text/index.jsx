@@ -4,16 +4,16 @@ const isValidInput = (value) => {
 };
 
 <input type="text"
-id="nameInput"
+    id="nameInput"
 
-onChange={(e) => {
+    onChange={(e) => {
 
-    const newValue = e.target.value;
-    if (isValidInput(newValue)) {
+        const newValue = e.target.value;
+        if (isValidInput(newValue)) {
 
-    } else {
-        document.getElementById('nameInput').value = ''
-    }
+        } else {
+            document.getElementById('nameInput').value = newValue.slice(0, -1)
+        }
 
-}}
+    }}
 />
