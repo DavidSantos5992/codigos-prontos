@@ -1,0 +1,28 @@
+/* 
+  
+  .items {
+    position: relative;
+    width: 500px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  .items {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .items::-webkit-scrollbar {
+    display: none; 
+  }
+   */
