@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colabore com o Projeto</title>
+  <!-- Inclua a biblioteca Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="text-center mb-4">
+        <h1>Colabore com o Projeto</h1>
+
+
+        
+        <p>PIX 34.863.177/0001-33</p>
+      </div>
+      <button class="btn btn-primary btn-block" id="btnColaborar">Colaborar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="pixModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pix Copiado com Sucesso!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        O PIX 34.863.177/0001-33 foi copiado para a área de transferência.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inclua a biblioteca jQuery e Bootstrap JS no final do corpo do documento para melhor desempenho -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $("#btnColaborar").click(function(){
+      // Copiar o PIX para a área de transferência
+      var pix = "34.863.177/0001-33";
+      navigator.clipboard.writeText(pix);
+
+      // Mostrar o modal
+      $("#pixModal").modal('show');
+    });
+  });
+</script>
+
+</body>
+</html>

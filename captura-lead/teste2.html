@@ -1,0 +1,42 @@
+<form>
+    <h1>teste</h1>
+
+    <label>
+        <span>Nome</span>
+        <input id="name" type="text" name="name">
+    </label>
+
+    <label>
+        <span>E-mail</span>
+        <input id="email" type="email" name="email">
+    </label>
+
+    <button type="submit"> enviar </button>
+
+</form>
+
+<script>
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value
+        var email = document.getElementById('email').value
+
+
+        fetch('https://api.sheetmonkey.io/form/2pQB4VeaVAJcP9Qir1s86q', {
+            method: 'post',
+
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email })
+
+        })
+
+        console.log(name)
+        console.log(email)
+    }
+
+    document.querySelector('form').addEventListener('submit', handleSubmit)
+</script>
