@@ -1,0 +1,18 @@
+
+<!-- input a ser estilizado   -->
+<input id="range" className="w-[20.83vw] h-[.5vw] ml-[.72vw]" type="range" min="0" max="100" value={sliderValue}
+    onChange={handleSliderChange} />
+<div className="value"></div>
+
+<!-- função para manipular bg -->
+<script>
+    const handleSliderChange = (event) => {
+        const tempSliderValue = event.target.value;
+
+        setSliderValue(tempSliderValue);
+
+        const progress = (tempSliderValue / event.target.max) * 100;
+
+        event.target.style.background = `linear-gradient(to right, #f50 ${progress}%, #ccc ${progress}%)`;
+    };
+</script>
