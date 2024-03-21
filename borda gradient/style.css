@@ -13,3 +13,10 @@
     border-image-slice: 1;
     border-image-source: linear-gradient(156.36deg, rgba(255, 255, 255, 0.4) 15.09%, rgba(255, 255, 255, 0) 84.65%);
 }
+
+/*   
+    borda reta gradient igual dos lados
+
+border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0.199) 0%, rgba(255, 255, 255, 0.459) 50%, rgba(255, 255, 255, 0.459) 50%, rgba(255, 255, 255, 0) 100%); */
